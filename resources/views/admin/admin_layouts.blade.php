@@ -273,7 +273,7 @@
             <nav class="nav">
                 <div class="dropdown">
                     <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-                        <span class="logged-name"><span class="hidden-md-down">{{Auth::}} Doe</span></span>
+                        <span class="logged-name"><span class="hidden-md-down">Administrator</span></span>
                         <img src="{{asset('public/backend/img/img3.jpg')}}" class="wd-32 rounded-circle" alt="">
                     </a>
                     <div class="dropdown-menu dropdown-menu-header wd-200">
