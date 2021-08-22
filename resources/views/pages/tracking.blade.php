@@ -154,7 +154,7 @@
                                         <div class="step-icon-wrap">
                                             <div class="step-icon"><i class="pe-7s-config"></i></div>
                                         </div>
-                                        <h4 class="step-title">Payment Accpect Urder Process</h4>
+                                        <h4 class="step-title">Payment Accpect Order Process</h4>
                                     </div>
                                     <div class="step">
                                         <div class="step-icon-wrap">
@@ -180,7 +180,7 @@
                                         <div class="step-icon-wrap">
                                             <div class="step-icon"><i class="pe-7s-config"></i></div>
                                         </div>
-                                        <h4 class="step-title text-info">Payment Accpect Urder Process</h4>
+                                        <h4 class="step-title text-info">Payment Accpect Order Process</h4>
                                     </div>
                                     <div class="step">
                                         <div class="step-icon-wrap">
@@ -206,7 +206,7 @@
                                         <div class="step-icon-wrap">
                                             <div class="step-icon"><i class="pe-7s-config"></i></div>
                                         </div>
-                                        <h4 class="step-title ">Payment Accpect Urder Process</h4>
+                                        <h4 class="step-title ">Payment Accpect Order Process</h4>
                                     </div>
                                     <div class="step completed">
                                         <div class="step-icon-wrap">
@@ -232,7 +232,7 @@
                                         <div class="step-icon-wrap">
                                             <div class="step-icon"><i class="pe-7s-config"></i></div>
                                         </div>
-                                        <h4 class="step-title">Payment Accpect Urder Process</h4>
+                                        <h4 class="step-title">Payment Accpect Order Process</h4>
                                     </div>
                                     <div class="step completed">
                                         <div class="step-icon-wrap">
@@ -272,10 +272,13 @@
                     <br>
                     <ul class="list-group col-lg-12">
                         <li class="list-group-item"> <b>Payment Type:</b>  {{$track->payment_type}}</li>
+                        @if ($track->payment_id != null)
+                        
                         <li class="list-group-item"><b>Payment ID:</b>  {{$track->payment_id}}</li>
+                        @endif
                         <li class="list-group-item"><b>Subtotal:</b>  {{$track->subtotal}}$</li>
-                        <li class="list-group-item"><b>Shipping:</b>  {{$track->shipping}}</li>
-                        <li class="list-group-item"><b>Total:</b>  {{$track->payment_type}}$</li>
+                        <li class="list-group-item"><b>Shipping:</b>  {{$track->shipping}}$</li>
+                        <li class="list-group-item"><b>Total:</b>  {{$track->total}}$</li>
                         <li class="list-group-item"><b>Month:</b>  {{$track->month}}</li>
                         <li class="list-group-item"><b>Date:</b>  {{$track->date}}</li>
                         <li class="list-group-item"><b>Year:</b>  {{$track->year}}</li>

@@ -125,8 +125,8 @@ $setting = DB::table('sitesetting')->first();
                         <div class="col-lg-2 col-sm-3 col-3 order-1">
                             <div class="logo_container">
                                 <div class="logo"><a href="{{url('/')}}"><img
-                                            src="{{asset('public/frontend/images/logo.png')}}" width='160px;'
-                                            height='100px;' alt=""></a></div>
+                                            src="{{asset('public/frontend/images/logo.png')}}" width="80%"
+                                             alt=""></a></div>
                             </div>
                         </div>
 
@@ -247,7 +247,7 @@ $setting = DB::table('sitesetting')->first();
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-4 footer_col">
+                        <div class="col-lg-5 footer_col">
                             <div class="footer_column footer_contact">
                                 <div class="logo_container">
                                     <div class="logo"><a href="{{url('/')}}">{{$setting->company_name}}</a></div>
@@ -268,7 +268,10 @@ $setting = DB::table('sitesetting')->first();
                             </div>
                         </div>
 
-                        <div class="col-lg-8 offset-lg-2">
+                        <div class="col-lg-5 offset-lg-2 ">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthanh.store.12.ecommerce&tabs=timeline&width=450&height=250&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=983236535798381" 
+                            width="450" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" 
+                            allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
 
                     </div>
