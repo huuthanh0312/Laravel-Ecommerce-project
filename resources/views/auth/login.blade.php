@@ -69,55 +69,47 @@
                 <div class="contact_form_container">
                     <div class="contact_form_title">Sign Up</div>
 
-                    <form action="{{route('register')}}" method="post" id="contact_form">
+                    <form action="{{ route('register') }}" id="contact_form" method="post">
                         @csrf
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" 
-                            id="name" aria-describedby="emailHelp" value="{{ old('name') }}" required
-                                placeholder="Enter Full Name">
-                            @error('name')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Enter Your Full Name " name="name" required="">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" id="phone" aria-describedby="emailHelp"
-                                placeholder="Enter Phone">
-                            @error('phone')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            <label for="exampleInputEmail1">Phone</label>
+                            <input type="text" class="form-control @error('phone') is-invalid @enderror" name="phone"
+                                value="{{ old('phone') }}" aria-describedby="emailHelp" placeholder="Enter Your Phone "
+                                required="">
                         </div>
+
+
                         <div class="form-group">
-                            <label for="email_up">Email</label>
-                            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email_up"
-                                value="{{ old('email') }}" required aria-describedby="emailHelp" placeholder="Enter your email">
-                            @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email"
+                                value="{{ old('email') }}" aria-describedby="emailHelp" placeholder="Enter Your Email "
+                                required="">
                         </div>
+
+
+
                         <div class="form-group">
-                            <label for="password_up">Password</label>
-                            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password_up" 
-                                placeholder="Enter your Password">
-                            @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            <label for="exampleInputEmail1">Password</label>
+                            <input type="password" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Enter Your Password " name="password" required="">
                         </div>
+
                         <div class="form-group">
-                            <label for="password_confirmation">Confirm Password</label>
-                            <input type="password" name="password_confirmation" class="form-control"
-                                id="password_confirmation" placeholder="Re-Type Password">
+                            <label for="exampleInputEmail1">Confirm Password</label>
+                            <input type="password" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Re-Type Password " name="password_confirmation" required="">
                         </div>
-                        <div class="form-group">
+
+
+
+
+
+                        <div class="contact_form_button">
                             <button type="submit" class="btn btn-info">Sign Up</button>
                         </div>
                     </form>

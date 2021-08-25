@@ -30,13 +30,13 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
     'google' => [
-        'client_id' => '266365325696-stkrl13942p27i9lpqvcbig6gslj53e4.apps.googleusercontent.com',
-        'client_secret' => 'FS5l_wzdP8yT9EkeUTux6RDa',
+        'client_id' => '',
+        'client_secret' => '',
         'redirect' => 'http://localhost/ecommerce/ecommerce/callback/google',
       ], 
       'facebook' => [
-        'client_id' => '983236535798381',
-        'client_secret' => '5cff1d5bd146b597179e99cc07dbf601',
+        'client_id' => '',
+        'client_secret' => '',
         'redirect' => 'http://localhost/ecommerce/ecommerce/callback/facebook',
       ],
 
